@@ -6,10 +6,10 @@
       debug:
         msg: "Hello world !"
 
-- name: Crete a file
-  file:
-    path: /tmp/devops.txt
-    state: touch
-    owner: ansible
-    mode: 0644
+    - name: Create a file
+      file:
+        path: /tmp/devops.txt
+        state: touch
+        owner: ansible
+        mode: 0644
 ...
