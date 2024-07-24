@@ -5,4 +5,11 @@
     - name: Show a hello world message
       debug:
         msg: "Hello world !"
+
+- name: Crete a file
+  file:
+    path: /tmp/devops.txt
+    state: touch
+    owner: ansible
+    mode: 0644
 ...
