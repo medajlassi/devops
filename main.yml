@@ -1,6 +1,6 @@
 ---
 - name: devops training
-  hosts: node1
+  hosts: devops
   tasks:
     - name: Show a hello world message
       debug:
